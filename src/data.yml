@@ -5,7 +5,7 @@ gaBeianHref: "http://www.baidu.com"
 boxes:
 - category: 运维导航
   category_id: devops
-  category_icon: '#developerCommunity'
+  category_icon: '#yw'
   items:
   - title: 跳板机
     logo: '#jumpserver'
@@ -19,17 +19,17 @@ boxes:
     desc: 我们是Elasticsearch,Kibana,Beats和Logstash的创造者 - Elastic Stack。
          安全可靠地搜索,分析和可视化数据。
   - title: Kibana
-    logo: '#gitlab'
+    logo: '#kibana'
     href: http://39.105.158.118:5601
     desc: Kibana是一个开源的分析和可视化平台,设计用于和Elasticsearch一起工作。
           你用Kibana来搜索,查看,并和存储在Elasticsearch索引中的数据进行交互。
   - title: Zabbix
-    logo: '#gitlab'
+    logo: '#zabbix'
     href: http://39.105.158.118:8081
     desc: zabbix能监视各种网络参数，保证服务器系统的安全运营；
           并提供灵活的通知机制以让系统管理员快速定位/解决存在的各种问题。
   - title: Supervisor web界面
-    logo: '#gitlab'
+    logo: '#kibana'
     href: http://47.90.102.100:5000/#/nodes
     desc: Cesi是supervisor的一个第三方软件，可以web化管理supervisor以及supervisor的服务
 
@@ -82,7 +82,7 @@ boxes:
     href: https://wiki.yfd.im/
     title: DiamondYuan's Wiki
     desc: 我的个人知识库,基于tiddlywiki。用于管理一些零碎的小知识。
-  - logo: '#vuejs'
+  - logo: '#php'
     href: https://php.net/manual/zh/
     title: php-manual
     desc: php官网，官网API才是最好的文档
