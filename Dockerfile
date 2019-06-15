@@ -3,6 +3,9 @@ FROM node:alpine as build
 COPY . /project/
 
 WORKDIR /project
+
+RUN npm --registry https://registry.npm.taobao.org
+
 RUN echo "Installing dependencies..." && \
     npm install
 RUN echo "Starting dist build..." && \
