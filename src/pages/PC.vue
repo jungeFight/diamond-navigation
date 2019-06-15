@@ -48,8 +48,6 @@
   }
 
   .main-content {
-    max-width: 1200px;
-    margin: 0 auto;
     background-color: #F3F6F8;
   }
 </style>
