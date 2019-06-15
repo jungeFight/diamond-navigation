@@ -13,7 +13,7 @@
             <img src="/static/ga-beian-icon.png"/>
             {{gaBeian}}
           </a>
-          <a href="https://yfd.im">呆萌的猿 博客</a>
+          <a href="zunler.top">sunrain 博客</a>
         </div>
       </div>
     </footer>

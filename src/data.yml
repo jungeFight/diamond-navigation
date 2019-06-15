@@ -1,8 +1,38 @@
-title: "呆萌的猿"
-beian: " 浙ICP备17058293号-1	"
-gaBeian: "浙公网安备 33010602008898号"
-gaBeianHref: "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602008898"
+title: "sunrain 统一运维平台"
+beian: " 鄂ICP备 12345666"
+gaBeian: "网安备 12345666号"
+gaBeianHref: "http://www.baidu.com"
 boxes:
+- category: 运维导航
+  category_id: devops
+  category_icon: '#developerCommunity'
+  items:
+  - title: 跳板机
+    logo: '#segmentfault-icon'
+    href: http://39.105.158.118:8080
+    desc: Jumpserver 是全球首款完全开源的堡垒机,
+         多云环境下更好用的堡垒机,使用GNU GPL v2.0开源协议,
+         是符合 4A 的专业运维安全审计系统。
+  - title: elasticsearch
+    logo: '#github'
+    href: http://39.105.158.118:9200
+    desc: 我们是Elasticsearch,Kibana,Beats和Logstash的创造者 - Elastic Stack。
+         安全可靠地搜索,分析和可视化数据。
+  - title: Kibana
+    logo: '#gitlab'
+    href: http://39.105.158.118:5601
+    desc: Kibana是一个开源的分析和可视化平台,设计用于和Elasticsearch一起工作。
+          你用Kibana来搜索,查看,并和存储在Elasticsearch索引中的数据进行交互。
+  - title: Zabbix
+    logo: '#gitlab'
+    href: http://39.105.158.118:8081
+    desc: zabbix能监视各种网络参数，保证服务器系统的安全运营；
+          并提供灵活的通知机制以让系统管理员快速定位/解决存在的各种问题。
+  - title: Supervisor web界面
+    logo: '#gitlab'
+    href: http://47.90.102.100:5000/#/nodes
+    desc: Cesi是supervisor的一个第三方软件，可以web化管理supervisor以及supervisor的服务
+
 - category: 开发社区
   category_id: developerCommunity
   category_icon: '#developerCommunity'
@@ -21,33 +51,25 @@ boxes:
     href: https://gitlab.com/
     title: Gitlab
     desc: GitLab是一个利用Ruby on Rails开发的开源应用程序，实现一个自托管的Git项目仓库。
-- category: 运维导航
-  category_id: devops
-  category_icon: '#developerCommunity'
-  items:
-  - title: 跳板机
-    logo: '#segmentfault-icon'
-    href: http://39.105.158.118:8080
-    desc: Jumpserver 是全球首款完全开源的堡垒机,
-         多云环境下更好用的堡垒机,使用GNU GPL v2.0开源协议,
-         是符合 4A 的专业运维安全审计系统。
-  - logo: '#github'
-    href: http://39.105.158.118:9200
-    title: elasticsearch
-    desc: 我们是Elasticsearch,Kibana,Beats和Logstash的创造者 - Elastic Stack。
-         安全可靠地搜索,分析和可视化数据。
-  - logo: '#gitlab'
-    href: https://gitlab.com/
-    title: Gitlab
-- category: 博客
+
+- category: 大刘博客
   category_id: blog
   category_icon: '#Blog'
   items:
-  - logo: '#jamespan-icon'
+  - title: James Pan's Blog
+    logo: '#jamespan-icon'
     href: https://blog.jamespan.me/
-    title: James Pan's Blog
     desc: 云数据库平台技术专家，客居杭州。喜欢学习研究新技术，然后中途弃坑。擅长构建无状态的分布式服务，更擅长让分布式系统进入无服务状态。不会用
       Git 只会用 SourceTree，没有 JetBrains 全家桶就写不出代码，没有 Google 和 StackOverflow 就解决不了技术问题。
+  - title: learnku社区
+    logo: '#jamespan-icon'
+    href: https://learnku.com/laravel
+    desc: LearnKu 是终身编程者的知识社区 保持好奇，刻意练习，每日精进
+  - title: Yii中文社区
+    logo: '#jamespan-icon'
+    href: https://www.yiichina.com/
+    desc: Yii 自带了 丰富的功能，包括 MVC，DAO/ActiveRecord，I18N/L10N，缓存，身份验证和基于角色的访问控制，脚手架，测试等，可显著缩短开发时间。
+
 - category: 参考文档
   category_id: document
   category_icon: '#document'
@@ -60,10 +82,19 @@ boxes:
     href: https://wiki.yfd.im/
     title: DiamondYuan's Wiki
     desc: 我的个人知识库,基于tiddlywiki。用于管理一些零碎的小知识。
-- category: 工具
+  - logo: '#vuejs'
+    href: https://php.net/manual/zh/
+    title: php-manual
+    desc: php官网，官网API才是最好的文档
+
+- category: 常用工具
   category_id: tools
   category_icon: '#tools'
   items:
+  - logo: '#processon-icon'
+    href: https://implode.io/
+    title: implode.io
+    desc: 在线运行php代码和laravel框架代码
   - logo: '#processon-icon'
     href: https://www.processon.com/
     title: ProcessOn
