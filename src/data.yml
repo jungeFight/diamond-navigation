@@ -33,6 +33,19 @@ boxes:
     href: http://47.90.102.100:5000/#/nodes
     desc: Cesi是supervisor的一个第三方软件，可以web化管理supervisor以及supervisor的服务
 
+- category: 产品导航
+  category_id: product-admin
+  category_icon: '#product-admin'
+  items:
+  - title: 职场人后台
+    logo: '#staff-admin'
+    href: http://manager.13xue.cn
+    desc: 让职场人和学生一样也有寒暑假
+  - logo: '#admin'
+    href: http://admin.13xue.cn
+    title: 接单后台
+    desc: 让你看手机的业余时间也可以赚点钱
+
 - category: 开发社区
   category_id: developerCommunity
   category_icon: '#developerCommunity'
