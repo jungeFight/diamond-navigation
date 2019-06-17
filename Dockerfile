@@ -4,12 +4,12 @@ COPY . /project/
 
 WORKDIR /project
 
-RUN npm --registry https://registry.npm.taobao.org info underscore
+RUN sudo apt-get update && sudo apt-get install yarn
 
 RUN echo "Installing dependencies..." && \
-    npm install
+    yarn install
 RUN echo "Starting dist build..." && \
-    npm run-script build
+    yarn run build
 
 FROM nginx:stable-alpine
 
