@@ -32,6 +32,11 @@ boxes:
     logo: '#supervisor'
     href: http://47.90.102.100:5000/#/nodes
     desc: Cesi是supervisor的一个第三方软件，可以web化管理supervisor以及supervisor的服务
+  - title: 代码发布系统
+    logo: '#devops'
+    href: http://39.105.158.118:8085
+    desc: 支持多项目、多环境一键部署上线，一键快速回滚。
+          多任务插件,pre-deploy、post-deploy、pre-release、post-release。
 
 - category: 产品导航
   category_id: product-admin
@@ -39,7 +44,7 @@ boxes:
   items:
   - title: 职场人后台
     logo: '#staff-admin'
-    href: http://manager.13xue.cn
+    href: http://manager.13xue.cn/#/login
     desc: 让职场人和学生一样也有寒暑假
   - logo: '#admin'
     href: http://admin.13xue.cn
