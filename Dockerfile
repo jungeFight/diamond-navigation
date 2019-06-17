@@ -1,4 +1,4 @@
-FROM node:alpine as build
+FROM node:latest as build
 
 COPY . /project/
 
@@ -6,13 +6,10 @@ WORKDIR /project
 
 ENV YARN_VERSION 1.13.0
 
-RUN apk add --no-cache --virtual .build-deps-yarn curl \
-    && curl -fSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz" \
-    && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/ \
-    && ln -snf /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn \
-    && ln -snf /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg \
-    && rm yarn-v$YARN_VERSION.tar.gz \
-    && apk del .build-deps-yarn
+RUN apt-get update && apt-get install -y curl apt-transport-https && \
+    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
+    apt-get update && apt-get install -y yarn
 
 RUN echo "Installing dependencies..." && \
     yarn install
