@@ -4,7 +4,7 @@ COPY . /project/
 
 WORKDIR /project
 
-RUN apt-get update && sudo apt-get install yarn
+RUN apt update && sudo apt install yarn
 
 RUN echo "Installing dependencies..." && \
     yarn install
