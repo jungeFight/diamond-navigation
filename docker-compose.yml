@@ -5,6 +5,7 @@ services:
     volumes:
       - .:/project/:rw
     command: "npm run-script build"
+    restart: always
     networks:
       - default
 
