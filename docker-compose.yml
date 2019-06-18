@@ -3,7 +3,7 @@ services:
   nodejs:
     build: .
     volumes:
-      - .:/project/:rw
+      - ./dist:/project/dist:rw
     networks:
       - default
 
