@@ -3,7 +3,8 @@ services:
   nodejs:
     build: .
     volumes:
-      - ./dist:/project/dist:rw
+      - .:/project/:rw
+    command: "npm run-script build"
     networks:
       - default
 
