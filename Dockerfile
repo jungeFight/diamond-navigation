@@ -6,7 +6,7 @@ COPY . /app/
 RUN npm --registry https://registry.npm.taobao.org info underscore
 
 RUN echo "Installing dependencies..." && \
-    npm install --only=production
+    npm install 
 RUN echo "Starting dist build..." && \
     npm run build
 RUN npm -g install serve
