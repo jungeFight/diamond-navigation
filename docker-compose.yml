@@ -4,6 +4,8 @@ services:
     build: .
     volumes:
       - .:/project/:rw
+    working_dir: /project
+    command: "npm run-script build"
     networks:
       - default
 

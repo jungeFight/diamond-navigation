@@ -14,5 +14,5 @@ RUN apt-get update && apt-get install -y curl apt-transport-https && \
 RUN echo "Installing dependencies..." && \
     yarn install
 RUN echo "Starting dist build..." && \
-    npm run-script build
+    yarn run build
 
