@@ -3,8 +3,10 @@ services:
   nodejs:
     build: .
     volumes:
-      - .:/project/:rw
-    command: "npm run-script build"
+      - .:/app/:rw
+    command: "npm run build"
+    ports:
+      - "8086:8086"
     restart: always
     networks:
       - default
@@ -12,7 +14,7 @@ services:
   nginx:
     image: nginx:stable-alpine
     ports:
-      - "8083:80"
+      - "8087:80"
     volumes:
       - ./dist:/usr/share/nginx/html/:rw
     restart: always
