@@ -1,4 +1,12 @@
-FROM node:latest as build
+FROM node:alpine as build
 
-RUN apt-get update && apt-get install -y yarn
+COPY . /project/
 
+WORKDIR /project
+
+RUN npm --registry https://registry.npm.taobao.org info underscore
+
+RUN echo "Installing dependencies..." && \
+    npm install
+RUN echo "Starting dist build..." && \
+    npm run-script build

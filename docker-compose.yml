@@ -4,16 +4,13 @@ services:
     build: .
     volumes:
       - .:/project/:rw
-    working_dir: /project
-    command: "echo "Installing dependencies..." && yarn install"
-    command: "echo "Starting dist build..." && yarn run build"
     networks:
       - default
 
   nginx:
     image: nginx:stable-alpine
     ports:
-      - "8086:80"
+      - "8083:80"
     volumes:
       - ./dist:/usr/share/nginx/html/:rw
     restart: always
