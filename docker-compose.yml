@@ -5,7 +5,8 @@ services:
     volumes:
       - .:/project/:rw
     working_dir: /project
-    command: "npm run-script build"
+    command: "echo "Installing dependencies..." && yarn install"
+    command: "echo "Starting dist build..." && yarn run build"
     networks:
       - default
 
