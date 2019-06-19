@@ -4,11 +4,8 @@ services:
     build: .
     container_name: navi-nodejs
     volumes:
-      - .:/app/:rw
-    command: "npm run build"
-    ports:
-      - "8086:8086"
-    restart: always
+      - .:/project/:rw
+    command: "npm run-script build && npm run build"
     networks:
       - default
 
@@ -16,7 +13,7 @@ services:
     image: nginx:stable-alpine
     container_name: navi-nginx
     ports:
-      - "8087:80"
+      - "8083:80"
     volumes:
       - ./dist:/usr/share/nginx/html/:rw
     restart: always
