@@ -5,7 +5,7 @@ services:
     container_name: navi-nodejs
     volumes:
       - .:/project/:rw
-    command: "npm run-script build && npm run build"
+    command: "npm install && npm run-script build"
     networks:
       - default
 
