@@ -5,13 +5,7 @@ services:
     container_name: navi-nodejs
     volumes:
       - .:/project/:rw
-    command:
-      - /bin/sh
-      - -c 
-      - |
-        cd /project
-        npm install
-        npm run-script build
+    command: "sh run.sh"
     networks:
       - default
 
