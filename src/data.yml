@@ -28,7 +28,7 @@ boxes:
     href: http://39.105.158.118:8081
     desc: zabbix能监视各种网络参数，保证服务器系统的安全运营；
           并提供灵活的通知机制以让系统管理员快速定位/解决存在的各种问题。
-  - title: Supervisor web界面
+  - title: Supervisor管理后台
     logo: '#supervisor'
     href: http://47.90.102.100:5000/#/nodes
     desc: Cesi是supervisor的一个第三方软件，可以web化管理supervisor以及supervisor的服务
