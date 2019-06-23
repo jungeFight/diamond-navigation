@@ -37,6 +37,10 @@ boxes:
     href: http://39.105.158.118:8085
     desc: 支持多项目、多环境一键部署上线，一键快速回滚。
           多任务插件,pre-deploy、post-deploy、pre-release、post-release。
+  - title: 服务注册中心
+    logo: '#serviceRegister'
+    href: http://47.90.102.100:8500/ui/dc1/services
+    desc: consul是近几年比较流行的服务发现工具,consul的三个主要应用场景：服务发现、服务隔离、服务配置。
 
 - category: 产品导航
   category_id: product-admin
